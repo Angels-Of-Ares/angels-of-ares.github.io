@@ -1,0 +1,33 @@
+//
+// COLORS
+// ----------------------------------------------
+$white: #fff;
+$black: #000;
+$red: #ff3864;
+
+
+$light-gray: #ececec;
+$dark-gray: #131313;
+
+$text-color: $white;
+$title-color: $white;
+
+$border-color: #555555;
+$input-bg: #222222;
+
+
+@mixin colors-cssvars {
+  :root {
+    --white: #{$white};
+    --black: #{$black};
+    --red: #{$red};
+
+    --dark-gray: #{$dark-gray};
+
+    --text-color: #{$text-color};
+    --title-color: #{$title-color};
+
+    --border-color: #{$border-color};
+    --input-bg: #{$input-bg};
+  }
+}

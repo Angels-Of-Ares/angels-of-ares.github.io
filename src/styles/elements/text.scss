@@ -1,0 +1,172 @@
+@import '../variables';
+@import '../mixins';
+
+//
+// Titles
+// ----------------------------------------------
+%title {
+  color: var(--title-color);
+  font-family: var(--title-font);
+}
+
+.page-title {
+  position: relative;
+  z-index: 1;
+  @extend %title;  
+  color: var(--teal);
+  font-size: clamp(1.6rem, 7vw, 2.3rem);
+  line-height: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em 0;
+  .subtitle {
+    color: var(--title-color);
+    line-height: 1.3;
+    font-size: 0.625em;
+    font-weight: normal;
+    margin-top: 0.75em;
+    display: block;
+  }
+}
+
+.section-title {
+  @extend %title;
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 1.5em 0 0.5em;
+}
+
+.content-title {
+  @extend %title;
+  color: var(--white);
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5em 0 0.75em;
+}
+
+.menu-title {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  border-bottom: 1px solid currentColor;
+}
+
+
+//
+// Text
+// ----------------------------------------------
+%p,
+p {
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
+  line-height: 1.5;
+}
+
+.text-link {
+  color: var(--teal);
+  display: inline-block;
+  &:hover {
+    color: var(--blue);
+    text-decoration: underline;
+  }
+}
+
+button.text-link {
+  background: none;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+
+ul, ol{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.list {
+  li {
+    @extend %p;
+    position: relative;
+    margin: 0;
+    padding-left: 1.5em;
+    margin-bottom: 0.25em;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0.4em;
+      width: 0.4em;
+      height: 0.4em;
+      border-radius: 0.5em;
+      background: var(--blue);
+    }
+  }
+}
+
+ol.list {
+  li {
+    @extend %p;
+    position: relative;
+    margin: 0;
+    padding-left: 1.5em;
+    padding-bottom: 0.25em;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0.4em;
+      width: 0.6em;
+      height: 0.6em;
+      border-radius: 0.5em;
+      border: 2px solid var(--blue);
+      background: var(--content-bg-color);
+    }
+    &.checked:before {
+      background: var(--white);
+      border-color: var(--white);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      width: 0;
+      left: 0.3em;
+      top: 0;
+      bottom: 0;
+      border-left: 1px dashed var(--lavender);
+    }
+    &:first-child:after {
+      top: 0.5em;
+    }
+    &:last-child:after {
+      bottom: calc(100% - 0.5em);
+    }
+  }
+}
+
+
+//
+// Algos icon
+// ----------------------------------------------
+
+.algos {
+  display: inline-block;
+  width: auto;
+  font-size: 0.625em;
+  height: 1em;
+  margin-left: 0.125em;
+  vertical-align: baseline;
+}

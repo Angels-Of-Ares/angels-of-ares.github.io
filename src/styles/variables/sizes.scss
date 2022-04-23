@@ -1,0 +1,29 @@
+//
+// SIZES
+// ----------------------------------------------
+
+// Breakpoints
+$breakpoint-sm: 560px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+
+@mixin sizes-cssvars {
+  :root {
+    --breakpoint-sm: #{$breakpoint-sm};
+    --breakpoint-md: #{$breakpoint-md};
+    --breakpoint-lg: #{$breakpoint-lg};
+    --breakpoint-xl: #{$breakpoint-xl};
+    --small-padding: 2vw;
+    --container-padding: 3vw;
+    --navbar-height: 3rem;
+  }
+  @include min-width($breakpoint-sm) {
+    :root {
+      --small-padding: 1rem;
+      --container-padding: 1.5rem;
+      --navbar-height: 4rem;
+    }
+  }
+}
