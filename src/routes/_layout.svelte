@@ -1,5 +1,5 @@
 <script>
-	import Scripts from '../components/elements/Scripts.svelte';
+	import Header from '../components/layout/Header.svelte';
 </script>
 
 <style lang="scss" global>
@@ -7,10 +7,13 @@
 </style>
 
 
+<Header />
+<main>
 	<slot></slot>
+</main>
 
 
 <!-- <Popup /> -->
-<Scripts />
+<!-- <Scripts /> -->
 
 

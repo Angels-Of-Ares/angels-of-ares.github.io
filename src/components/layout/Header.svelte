@@ -1,0 +1,40 @@
+<script>
+  import BPs from '../blocks/BPs.svelte';
+  import NavLink from '../elements/NavLink.svelte';
+  import MobileNav from './MobileNav.svelte';
+  import DesktopNav from './DesktopNav.svelte';
+
+</script>
+
+<style lang="scss">
+  header {
+    padding: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    margin: 0;
+    img {
+      width: 3em;
+    }
+  }
+  
+</style>
+
+<header>
+  <h1 class="logo">
+    <NavLink href="/" title="Home" strict>
+      <img src="images/aoa-logo.png" alt="Angels Of Ares - Logo" class="logo" />
+      Angels Of Ares
+    </NavLink>
+  </h1>
+  
+  <BPs bps={[
+    { media: '(max-width: 767px)', component: MobileNav },
+    { media: '(min-width: 768px)', component: DesktopNav },
+  ]} />
+</header>

@@ -8,8 +8,9 @@
 </style>
 
 <div class="content">
-  <h1>
-    hello world
+  <h1 class="page-title">
+    Investment Club. <br> 
+    For the Elite.
   </h1>
 
 </div>

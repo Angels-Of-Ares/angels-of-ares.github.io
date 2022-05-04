@@ -11,12 +11,13 @@
 
 <style lang="scss">
   a {
-    color: var(--blue);
+    color: var(--white);
+    font-family: var(--title-font);
     text-decoration: none;
     text-transform: uppercase;
     display: block;
     &:hover {
-      color: var(--blue);
+      color: var(--primary);
       text-decoration: none;
     }
     &.active {
