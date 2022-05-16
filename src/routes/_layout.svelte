@@ -4,11 +4,14 @@
 
 <style lang="scss" global>
 	@import "../styles/global";
+	.page-wrapper {
+		padding-top: 6rem;
+	}
 </style>
 
 
 <Header />
-<main>
+<main class="page-wrapper">
 	<slot></slot>
 </main>
 

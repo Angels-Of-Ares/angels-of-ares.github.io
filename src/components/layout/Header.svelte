@@ -13,8 +13,15 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
   }
   .logo {
+    position: relative;
+    z-index: 10;
     font-family: var(--title-font);
     font-size: 1.25rem;
     margin: 0;

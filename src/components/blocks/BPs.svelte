@@ -26,7 +26,6 @@
     if (!mq) return;
     mq.active = e.matches;
     mqs = mqs;
-    console.log(mq);
   }
 </script>
 
@@ -34,6 +33,7 @@
 <style lang="scss">
   
 </style>
+
 
 {#each mqs as mq (mq.media)}
   {#if mq.active}

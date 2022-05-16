@@ -1,0 +1,15 @@
+//
+// FX
+// ----------------------------------------------
+$backlight: 0 0 5em -0.5em rgba(#ffffff, 0.75),
+            0 0 1em -0.25em rgba(#ffffff, 0.25);  
+
+$no-backlight:  0 0 2em -0.5em rgba(#ffffff, 0),
+                0 0 0em -0.25em rgba(#ffffff, 0);
+
+@mixin fx-cssvars {
+  :root {
+    --backlight: #{$backlight};
+    --no-backlight: #{$no-backlight};
+  }
+}

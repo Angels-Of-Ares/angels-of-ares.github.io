@@ -6,7 +6,6 @@
   text-transform: uppercase;
   display: inline-block;
   padding: 1em 1.5em;
-  border-radius: 0.25rem;
   outline: none;
   text-decoration: none;
   i {
@@ -48,10 +47,11 @@
   color: var(--white);
   background: none;
   border: 1px solid transparent;
+  transition: box-shadow 480ms ease;
+  box-shadow: var(--no-backlight);
   &:hover {
     color: var(--white);
-    background: var(--red);
-    border: 1px solid var(--red);
+    box-shadow: var(--backlight);
   }
 }
 
