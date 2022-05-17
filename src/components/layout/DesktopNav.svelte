@@ -34,6 +34,8 @@
       left: 50%;
       top: -2rem;
       padding: 5rem 1rem 1rem;
+      text-align: center;
+      white-space: nowrap;
       background: var(--black);
       box-shadow: 0 1em 10em -1em rgba(#ffffff, 0.5);
       opacity: 0;

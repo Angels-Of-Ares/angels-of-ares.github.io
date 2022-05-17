@@ -1,5 +1,5 @@
 <script>
-  import BPs from '../blocks/BPs.svelte';
+  import BPs from '../utilities/BPs.svelte';
   import NavLink from '../elements/NavLink.svelte';
   import MobileNav from './MobileNav.svelte';
   import DesktopNav from './DesktopNav.svelte';
@@ -18,6 +18,16 @@
     left: 0;
     width: 100%;
     z-index: 12;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 150%;
+      background: linear-gradient(0deg, rgba(#000000,0) 0%, rgba(#000000,1) 50%);
+    }
   }
   .logo {
     position: relative;

@@ -1,16 +1,13 @@
 <script>
-
+  
+  import Intro from '../components/blocks/HomeIntro.svelte'
+  import Markdown from '../components/blocks/Markdown.svelte'
+  import what from '../contents/home/what.md'
+  
 </script>
 
-<style lang="scss">
+<Intro />
 
- 
-</style>
-
-<div class="content">
-  <h1 class="page-title">
-    Investment Club. <br> 
-    For the Elite.
-  </h1>
-
+<div class="container" >
+  <Markdown content={what} />
 </div>

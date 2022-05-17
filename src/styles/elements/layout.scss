@@ -3,7 +3,7 @@
 
 html, body {
   min-height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 html {
   background: var(--black);
@@ -14,4 +14,9 @@ html body {
   position: relative;
   color: var(--white);
   font-family: var(--text-font);
+}
+.container {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: var(--container-width);
 }

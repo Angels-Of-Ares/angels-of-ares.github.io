@@ -6,6 +6,7 @@ import url from '@rollup/plugin-url';
 import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
+import { string } from 'rollup-plugin-string';
 import sveltePreprocess from 'svelte-preprocess';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
@@ -47,6 +48,9 @@ export default {
 			resolve({
 				browser: true,
 				dedupe: ['svelte']
+			}),
+			string({
+				include: '**/*.md',
 			}),
 			commonjs(),
 
@@ -101,6 +105,9 @@ export default {
 			}),
 			resolve({
 				dedupe: ['svelte']
+			}),
+			string({
+				include: '**/*.md',
 			}),
 			commonjs()
 		],
