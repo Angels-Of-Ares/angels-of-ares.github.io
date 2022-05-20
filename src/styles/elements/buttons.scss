@@ -32,12 +32,13 @@
 
 .primary-btn { 
   @extend %btn;
-  color: var(--white);
-  background: var(--gradient);
+  color: var(--black);
+  background: var(--white);
   border: none;
   &:hover {
+    border: 1px solid var(--white);
     color: var(--white);
-    background: var(--red);
+    background: var(--black);
   }
 }
 

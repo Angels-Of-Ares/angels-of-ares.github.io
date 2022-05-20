@@ -19,13 +19,13 @@
   <ul class="nav">
 
     <li class="item">
-      <NavLink href="/aoa" label="AoA"/>
+      <NavLink href="#" label="AoA"/>
       <ul class="subnav">
         <li class="subitem">
-          <NavLink href="/aoa/about" label="About"/>
+          <NavLink href="/how-it-works" label="How It Works"/>
         </li>
         <li class="subitem">
-          <NavLink href="/aoa/partners" label="Partners"/>
+          <NavLink href="/partners" label="Partners"/>
         </li>
         <li class="subitem">
           <NavLink href="/docs/aoa-litepaper.pdf" target="_blank" label="Lite Paper"/>
@@ -34,16 +34,10 @@
     </li>
 
     <li class="item">
-      <NavLink href="/nfts" label="NFTs"/>
+      <NavLink href="#" label="NFTs"/>
       <ul class="subnav">
         <li class="subitem">
-          <NavLink href="/nfts/shop" label="NFT Shop"/>
-        </li>
-        <li class="subitem">
           <NavLink href="/nfts/vault" label="AoA Vault PFPs"/>
-        </li>
-        <li class="subitem">
-          <NavLink href="/nfts/reputable-projects" label="Reputable Projects"/>
         </li>
       </ul>
     </li>

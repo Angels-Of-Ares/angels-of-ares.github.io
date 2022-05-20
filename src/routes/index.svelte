@@ -1,13 +1,24 @@
 <script>
-  
-  import Intro from '../components/blocks/HomeIntro.svelte'
-  import Markdown from '../components/blocks/Markdown.svelte'
-  import what from '../contents/home/what.md'
-  
+  import Intro from '../components/blocks/HomeIntro.svelte';
+  import WingsNFT from '../components/blocks/WingsNFT.svelte';
+  import WhatWeDo from '../components/blocks/WhatWeDo.svelte';
 </script>
 
-<Intro />
 
-<div class="container" >
-  <Markdown content={what} />
+<style lang="scss">
+  .container {
+    text-align: center;
+    margin-top: -2rem;
+  }  
+</style>
+
+
+<Intro />
+<WhatWeDo />
+<WingsNFT />
+
+<div class="container">
+  <a class="primary-btn" href="/how-it-works">
+    How It Works
+  </a>
 </div>

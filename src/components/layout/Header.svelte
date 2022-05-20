@@ -38,6 +38,9 @@
     img {
       width: 3em;
     }
+    :global(a:after) {
+      display: none;
+    } 
   }
   
 </style>
