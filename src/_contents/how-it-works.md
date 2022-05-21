@@ -1,5 +1,7 @@
 
-Add a little paragraph here, explaining that AoA gives its members daily rewards in $Algo. Where does the money comes from, why $algo rewards, etc... 
+Angels Of Ares runs two unique programs for rewarding holders. One program is a native stake-by-holding program, and the second is a revenue program which comes from our various revenue streams, and is linked to our Angel Wings NFT. 
+
+AoA rewards holders of both programs with $ALGO deposited directly to their wallets without any user interaction. We reward in $ALGO to avoid any selling pressure on the token, and to maintain a source of stable returns to our holders.
 
 ## Membership tiers
 

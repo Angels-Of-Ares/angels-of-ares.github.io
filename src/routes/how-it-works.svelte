@@ -10,8 +10,7 @@
   .content :global(.markdown) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-
+    column-gap: 1em;
     :global( > *) {
       grid-column: span 3;
     }
@@ -19,12 +18,12 @@
   }
   .content :global(.markdown table) {
     grid-column: span 3;
+    margin-top: 1em;
     padding: 1em;
     border: 1px solid var(--border-color);
     box-shadow: var(--backlight);
     @include min-width($breakpoint-md) {
-      grid-column: span 1;
-      
+      grid-column: span 1; 
     }
     &, :global(tr), :global(thead), :global(tbody), :global(td), :global(th) {
       display: block;
@@ -51,6 +50,9 @@
   }
 </style>
 
+<svelte:head>
+	<title>How It Works - Angels Of Ares - Algorand Investment Club</title>
+</svelte:head>
 
 <div class="container">
   <h1 class="page-title">

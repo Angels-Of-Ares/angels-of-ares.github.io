@@ -12,6 +12,9 @@
   }  
 </style>
 
+<svelte:head>
+	<title>Angels Of Ares - Algorand Investment Club</title>
+</svelte:head>
 
 <Intro />
 <WhatWeDo />

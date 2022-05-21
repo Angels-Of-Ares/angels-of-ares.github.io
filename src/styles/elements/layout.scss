@@ -16,7 +16,10 @@ html body {
   font-family: var(--text-font);
 }
 .container {
-  margin: 5rem auto;
   width: 90%;
   max-width: var(--container-width);
+  margin: 2rem auto;
+  @include min-width($breakpoint-md) {
+    margin: 5rem auto; 
+  }
 }

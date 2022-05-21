@@ -4,6 +4,10 @@
 
 
 <style lang="scss">
+  .nav :global(a[href="#"]) {
+    pointer-events: none;
+    cursor: default;
+  }
   .social {
     .subnav {
       white-space: nowrap;
@@ -37,13 +41,18 @@
       <NavLink href="#" label="NFTs"/>
       <ul class="subnav">
         <li class="subitem">
-          <NavLink href="/nfts/vault" label="AoA Vault PFPs"/>
+          <NavLink href="/vault" label="AoA Vault PFPs"/>
         </li>
       </ul>
     </li>
 
     <li class="item">
-      <NavLink href="/ghost" label="Ghost Token"/>
+      <NavLink href="#" label="Side Projects"/>
+      <ul class="subnav">
+        <li class="subitem">
+          <NavLink href="/ghost-token" label="Ghost Token"/>
+        </li>
+      </ul>
     </li>
 
     <li class="item social">
