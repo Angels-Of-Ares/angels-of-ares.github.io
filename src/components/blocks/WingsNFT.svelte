@@ -16,28 +16,12 @@
   }
   .nft-wrapper {
     padding: 2rem;
-    position: relative;
     flex-basis: 100%;
-    &:before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: -25%;
-      bottom: -25%;
-      right: -10%;
-      left: -25%;
-      background: radial-gradient(circle closest-side, rgba(#ffffff,0.5) 0%, rgba(#ffffff,0.15) 66%, rgba(#ffffff,0) 100%);
-    }
   }
   .nft {
     display: block;
     color: var(--white);
-    background: var(--black);
-    transform: perspective(64rem) rotateY(15deg);
     animation: spin-card infinite alternate 1800ms forwards ease-in-out;
-    img {
-      width: 100%;
-    }
     .metadata {
       display: block;
       padding: 0 2em 2em;
@@ -68,9 +52,9 @@
 
 <div class="container">
   <div class="columns">
-    <div class="nft-wrapper">
+    <div class="nft-wrapper image-card-wrapper">
       <a 
-        class="nft"
+        class="nft image-card"
         href="https://www.nftexplorer.app/asset/649565986" 
         target="_blank" 
       >

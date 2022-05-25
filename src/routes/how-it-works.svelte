@@ -22,6 +22,8 @@
     padding: 1em;
     border: 1px solid var(--border-color);
     box-shadow: var(--backlight);
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+    overflow: hidden;
     @include min-width($breakpoint-md) {
       grid-column: span 1; 
     }

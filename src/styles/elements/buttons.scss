@@ -21,11 +21,11 @@
   @extend %btn;
   color: var(--white);
   background: none;
-  border: 1px solid var(--white);
+  border: 1px solid var(--border-color);
   &:hover {
     color: var(--white);
     background: var(--gradient);
-    border: 1px solid var(--purple);
+    border: 1px solid var(--white);
     
   }
 }
