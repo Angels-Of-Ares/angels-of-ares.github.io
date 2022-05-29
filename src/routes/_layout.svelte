@@ -1,5 +1,6 @@
 <script>
 	import Header from '../components/layout/Header.svelte';
+	import Footer from '../components/layout/Footer.svelte';
 </script>
 
 <style lang="scss" global>
@@ -14,9 +15,5 @@
 <main class="page-wrapper">
 	<slot></slot>
 </main>
-
-
-<!-- <Popup /> -->
-<!-- <Scripts /> -->
-
+<Footer />
 

@@ -6,6 +6,7 @@
 <style lang="scss">
   @import '../../styles/mixins';
   @import '../../styles/variables';
+ 
   .columns {
     display: flex;
     flex-flow: column nowrap;
@@ -46,10 +47,27 @@
       transform: perspective(64rem) rotateY(24deg);
     }
   }
+
+  .bg {
+    position: relative;
+    z-index: -1;
+    height: 0;
+    img {
+      position: absolute;
+      left: 0;
+      top: 12rem;
+      width: 100%;
+      @include min-width($breakpoint-md) {
+        top: -3rem;
+      }
+    }
+  }
 </style>
 
 
-
+<div class="bg">
+  <img src="/images/bg-2.svg" alt="bg"/>
+</div>
 <div class="container">
   <div class="columns">
     <div class="nft-wrapper image-card-wrapper">

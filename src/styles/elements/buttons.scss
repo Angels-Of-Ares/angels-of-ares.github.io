@@ -26,7 +26,6 @@
     color: var(--white);
     background: var(--gradient);
     border: 1px solid var(--white);
-    
   }
 }
 
@@ -34,7 +33,7 @@
   @extend %btn;
   color: var(--black);
   background: var(--white);
-  border: none;
+  border: 1px solid var(--white);
   &:hover {
     border: 1px solid var(--white);
     color: var(--white);

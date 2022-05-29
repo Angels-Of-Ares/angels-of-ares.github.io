@@ -7,6 +7,19 @@
 <style lang="scss">
   @import '../styles/mixins';
   @import '../styles/variables';
+  .page-title {
+    .ghost-logo {
+      display: inline-block;
+      height: 0.875em;
+      margin: -0.1em 0.125em 0 0;
+    }
+    span {
+      display: block;
+      @include min-width($breakpoint-md) {
+        display: inline;   
+      }
+    }
+  }
   .content {
     position: relative;
     :global(.markdown) {
@@ -23,7 +36,7 @@
     margin-top: 3em;
     text-align: center;
   }
-  .ghost-logo {
+  .ghost-bg {
     position: absolute;
     z-index: -1;
     left: 50%;
@@ -31,11 +44,11 @@
     height: 100%;
     transform: translate(-50%, -50%);
     opacity: 0.2;
-    animation: ghosting 10s infinite both ease;
+    animation: ghosting 20s infinite both ease;
   }
 
   $steps: 100;
-  $opacity: 18;
+  $opacity: 50;
   @keyframes ghosting {
     0% {
       opacity: 0;
@@ -58,10 +71,13 @@
 
 <div class="container">
   <h1 class="page-title">
-    Ghost Token
+    <img class="ghost-logo" src="/images/ghost-logo.svg" alt="Ghost logo" />
+    <span>
+      Ghost Token
+    </span>
   </h1>
   <div class="content">
-    <img src="/images/ghost-logo.svg" alt="Ghost Token Logo" class="ghost-logo" />
+    <img src="/images/ghost-logo-gradient.svg" alt="Ghosting in the background" class="ghost-bg" />
     <Markdown content={ghost} />
     <div class="cta">
       <a href="https://tinychart.org/asset/714773890" target="_blank" class="primary-btn">

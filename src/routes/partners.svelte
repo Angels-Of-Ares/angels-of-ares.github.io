@@ -1,4 +1,5 @@
 <script>
+  import PageTitle from '../components/blocks/PageTitle.svelte';
   import partners from '../_contents/partners';
 </script>
 
@@ -43,10 +44,13 @@
 	<title>Partnered Projects - Angels Of Ares - Algorand Investment Club</title>
 </svelte:head>
 
-<div class="container">
+<PageTitle>
   <h1 class="page-title">
     Partnered Projects
   </h1>
+</PageTitle>
+
+<div class="container">
   <ul>
     {#each partners as partner}
       <li class="partner">
