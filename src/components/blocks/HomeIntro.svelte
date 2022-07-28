@@ -5,7 +5,6 @@
 
 <style lang="scss">
   .intro {
-    min-height: 66vh;
     display: flex;
     flex-flow: row wrap;
     align-items: center;

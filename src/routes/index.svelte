@@ -13,7 +13,7 @@
 </style>
 
 <svelte:head>
-	<title>Angels Of Ares - Algorand Investment Club</title>
+	<title>Angels Of Ares - Invest. Earn. Build.</title>
 </svelte:head>
 
 <Intro />
