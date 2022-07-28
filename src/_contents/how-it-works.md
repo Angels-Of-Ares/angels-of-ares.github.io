@@ -1,24 +1,13 @@
 
-Angels Of Ares runs two unique programs for rewarding holders. One program is a native stake-by-holding program, and the second is a revenue program which comes from our various revenue streams, and is linked to our Angel Wings NFT. 
-
-AoA rewards holders of both programs with $ALGO deposited directly to their wallets without any user interaction. We reward in $ALGO to avoid any selling pressure on the token, and to maintain a source of stable returns to our holders.
-
-## Membership tiers
-
-| Membership | Tier 1 |
+| Membership | Staking Rewards |
 | --- | --- |
-| Requires | $AoA tokens <br/> or AoA/ALGO LP tokens |
-| Rewards |  A minimum holding score of 2500 makes you eligible for $ALGO rewards sent out daily. You will also receive the "Angel" role in Discord, granting access to extra channels for holders | 
+| Hold | $AoA tokens <br/> or AoA/ALGO LP tokens |
+| Rewards |  A minimum holding score of 2500 makes you eligible for $ALGO rewards sent out weekly. You will also receive the "Angel" role in Discord, granting access to extra benefits for holders | 
 || *Score Calculation: <br/> 1K $AoA Tokens = 10 Points<br/> 1 LP Token = 500 Points* |
 
 
-| Membership | Tier 2 |
+| Membership | Angel Wings Revenue |
 | --- | --- |
-| Requires | 1-4 Angel Wings NFTs |
-| Rewards | Receive daily $ALGO revenue and "Angel" role in Discord |
-
-
-| Membership | Tier 3 |
-| --- | --- |
-| Requires | 5+ Angel Wings NFTs |
-| Rewards | Receive daily $ALGO revenue and "Angel" role in Discord |
+|| Holding Angel Wings NFTs entitles its holder to weekly $ALGO revenue allocated from the AoA vault. This revenue is the outcome of investments and creations made by the AoA guild as a whole. Angel Wings primary market is conducted off markets, to ensure supply release is well maintained overtime. To get Angel Wings, reach out to us on Discord. |
+|| *Users must have their wallets registered on Discord to be eligible for any drops* |
+|| *Angel Wings are sold off-market. To request Angel Wings, head to Discord.* |

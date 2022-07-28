@@ -1,3 +1,8 @@
+<script>
+  import Markdown from './Markdown.svelte'
+  import intro from '../../_contents/intro.md'
+</script>
+
 <style lang="scss">
   .intro {
     min-height: 66vh;
@@ -19,7 +24,7 @@
       animation: bg-appear 8s ease-out both 1s;
     }
   }
-  .page-title {
+  :global(h1) {
     animation: text-appear 5s ease-out both 0s;
   }
 
@@ -45,8 +50,7 @@
 
 
 <div class="intro">
-  <h1 class="page-title">
-    Investment Club. <br> 
-    For the Elite.
-  </h1>
+  <div class="container">
+    <Markdown content={intro} />
+  </div>
 </div>

@@ -10,12 +10,11 @@
   @import '../styles/variables';
   .content :global(.markdown) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 1em;
     :global( > *) {
-      grid-column: span 3;
+      grid-column: span 2;
     }
-
   }
   .content :global(.markdown table) {
     grid-column: span 3;
@@ -45,6 +44,7 @@
       margin: -1em -1em 1em;
       font-family: var(--title-font);
       background: var(--dark-gray);
+      text-align: center;
     }
     :global(td:first-child) {
       font-weight: bold;
@@ -61,12 +61,12 @@
 </style>
 
 <svelte:head>
-	<title>How It Works - Angels Of Ares - Algorand Investment Club</title>
+	<title>Membership Tiers - Angels Of Ares - Algorand Investment Club</title>
 </svelte:head>
 
 <PageTitle>
   <h1 class="page-title">
-    How It Works
+    Membership Tiers
   </h1>
 </PageTitle>
 
@@ -75,11 +75,11 @@
     <Markdown content={hiw} />
   </div>
   <div class="actions">
-    <a class="primary-btn" target="_blank" href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=466716175">
-      Get the token
+    <a class="primary-btn" target="_blank" href="https://app.humble.sh/swap?poolId=810058782&asset_in=0&asset_out=466716175">
+      Get Tokens
     </a>
-    <a class="primary-btn" target="_blank" href="https://www.algogems.io/nft/649565986">
-      Get the Wings
+    <a class="primary-btn" target="_blank" href="https://app.humble.sh/pool/add/810058782">
+      Add Liquidity
     </a>
   </div>
 </div>

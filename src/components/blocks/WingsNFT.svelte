@@ -73,14 +73,14 @@
     <div class="nft-wrapper image-card-wrapper">
       <a 
         class="nft image-card"
-        href="https://www.nftexplorer.app/asset/649565986" 
+        href="https://www.nftexplorer.app/asset/789639573" 
         target="_blank" 
       >
         <img src="images/wings-small.jpg" alt="Wings NFT"/>
         <div class="metadata">
           <span class="title">Angel Wings</span>
           <span class="unit">AoA-AW</span>
-          <span class="asaid">649565986</span>
+          <span class="asaid">789639573</span>
         </div>
       </a>
     </div>

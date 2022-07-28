@@ -5,13 +5,13 @@ $white: #fff;
 $black: #000;
 $red: #ff3864;
 
-
 $light-gray: #ececec;
 $medium-gray: #444444;
 $dark-gray: #131313;
 
 $text-color: $white;
 $title-color: $white;
+$accent-color: #ff7cff;
 
 $border-color: #555555;
 $input-bg: #222222;
@@ -28,6 +28,7 @@ $input-bg: #222222;
 
     --text-color: #{$text-color};
     --title-color: #{$title-color};
+    --accent-color: #{$accent-color};
 
     --border-color: #{$border-color};
     --input-bg: #{$input-bg};

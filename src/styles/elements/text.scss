@@ -9,7 +9,8 @@
   font-family: var(--title-font);
 }
 
-.page-title {
+.page-title,
+.markdown h1 {
   position: relative;
   z-index: 1;
   @extend %title;  
@@ -27,7 +28,8 @@
   }
 }
 
-.section-title {
+.section-title,
+.markdown h2 {
   @extend %title;
   font-size: clamp(1.25rem, 4vw, 1.5rem);
   line-height: 1.2;
@@ -35,7 +37,8 @@
   margin: 1.5em 0 0.5em;
 }
 
-.content-title {
+.content-title,
+.markdown h3 {
   @extend %title;
   font-size: clamp(1rem, 3vw, 1.25rem);
   line-height: 1.2;
@@ -67,7 +70,9 @@ p {
   }
 }
 
-.text-link {
+.text-link,
+.markdown a {
+  color: var(--accent-color);
   display: inline-block;
   &:hover {
     text-decoration: underline;
@@ -88,7 +93,8 @@ ul, ol{
   margin: 0;
 }
 
-ul.list {
+ul.list,
+.markdown ul{
   li {
     @extend %p;
     position: relative;

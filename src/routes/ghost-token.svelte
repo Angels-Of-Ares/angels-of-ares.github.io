@@ -30,11 +30,17 @@
       :global(> *:last-child) {
         margin-bottom: 0;
       }
+      :global(:first-child) {
+        margin-top: 0;
+      }
     }
   }
-  .cta {
+  .actions {
     margin-top: 3em;
     text-align: center;
+    a {
+      margin: 0 0.25em;
+    }
   }
   .ghost-bg {
     position: absolute;
@@ -79,9 +85,12 @@
   <div class="content">
     <img src="/images/ghost-logo-gradient.svg" alt="Ghosting in the background" class="ghost-bg" />
     <Markdown content={ghost} />
-    <div class="cta">
-      <a href="https://tinychart.org/asset/714773890" target="_blank" class="primary-btn">
-        Do not press!
+    <div class="actions">
+      <a href="https://www.nftexplorer.app/collection/ghosts-of-algo" target="_blank" class="primary-btn">
+        Do Not Press!
+      </a>
+      <a href="https://vestige.fi/asset/714773890" target="_blank" class="primary-btn">
+        Definitely Do Not Press!
       </a>
     </div>
   </div>
