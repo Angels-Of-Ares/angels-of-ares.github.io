@@ -33,7 +33,7 @@
     position: relative;
     z-index: 10;
     font-family: var(--title-font);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin: 0;
     img {
       width: 3em;

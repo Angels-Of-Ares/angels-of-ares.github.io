@@ -1,10 +1,16 @@
 <script>
+  import { stores } from '@sapper/app';
   import { fly } from 'svelte/transition';
 	import { circInOut } from 'svelte/easing';
   import NavLinks from '../layout/NavLinks.svelte';
+  const { page } = stores();
   export let active = false;
+  $: $page.path, closeMenu();
   function toggle() {
     active = !active;
+  }
+  function closeMenu() {
+    if (active) active = false;
   }
 </script>
 
@@ -45,7 +51,6 @@
       padding: 0.5em; 
     }
   }
-
 </style>
 
 <button class="toggle ghost-btn" on:click|preventDefault={toggle}>

@@ -21,7 +21,7 @@
 <WingsNFT />
 
 <div class="container">
-  <a class="primary-btn" href="/how-it-works">
+  <a class="primary-btn" href="/membership">
     How It Works
   </a>
 </div>

@@ -52,10 +52,10 @@
     }
   }
   .actions {
-    margin-top: 3em;
+    margin-top: 2.5em;
     text-align: center;
     a {
-      margin: 0 0.25em;
+      margin: 0.25em;
     }
   }
 </style>
