@@ -1,6 +1,8 @@
 <script>
 	import Header from '../components/layout/Header.svelte';
 	import Footer from '../components/layout/Footer.svelte';
+	import Transitions from '../components/utilities/Transitions.svelte';
+	export let segment;
 </script>
 
 <style lang="scss" global>
@@ -13,7 +15,9 @@
 
 <Header />
 <main class="page-wrapper">
-	<slot></slot>
+	<Transitions refresh={segment}>
+		<slot></slot>
+	</Transitions>
 </main>
 <Footer />
 

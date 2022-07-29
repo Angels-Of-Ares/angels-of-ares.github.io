@@ -1,16 +1,16 @@
 <script>
-  import { stores } from '@sapper/app';
   import { fly } from 'svelte/transition';
 	import { circInOut } from 'svelte/easing';
   import NavLinks from '../layout/NavLinks.svelte';
-  const { page } = stores();
   export let active = false;
-  $: $page.path, closeMenu();
+  
   function toggle() {
     active = !active;
   }
-  function closeMenu() {
-    if (active) active = false;
+  function menuClicked(e) {
+    if ((e.path || (e.composedPath && e.composedPath()) || []).some(node => node.nodeName === 'A')) {
+      active = false;
+    }
   }
 </script>
 
@@ -64,6 +64,7 @@
 {#if active}
   <div 
     class="mobile" 
+    on:click={menuClicked}
     transition:fly={{
       duration: 600, 
       x: 0, 
