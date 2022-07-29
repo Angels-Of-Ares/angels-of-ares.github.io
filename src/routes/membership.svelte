@@ -61,7 +61,7 @@
 </style>
 
 <svelte:head>
-	<title>Membership Tiers - Angels Of Ares - Algorand Investment Club</title>
+	<title>Membership Tiers - Angels Of Ares - Invest. Earn. Build.</title>
 </svelte:head>
 
 <PageTitle>

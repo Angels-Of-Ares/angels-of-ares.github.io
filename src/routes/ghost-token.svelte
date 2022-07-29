@@ -72,7 +72,7 @@
 </style>
 
 <svelte:head>
-	<title>Ghost Token - Angels Of Ares - Algorand Investment Club</title>
+	<title>Ghost Token - Angels Of Ares - Invest. Earn. Build.</title>
 </svelte:head>
 
 <div class="container">
